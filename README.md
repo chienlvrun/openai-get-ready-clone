@@ -1,4 +1,4 @@
-# video-clone
+# openai-get-ready-clone
 
 Reverse-engineering finished motion-graphics videos **frame by frame** and rebuilding them as **pure code**: every shape, glyph and dot is a live vector layer drawn on a canvas, driven by measured data and recovered easing formulas. No footage, no tracing overlays, and no frames copied from the source.
 
