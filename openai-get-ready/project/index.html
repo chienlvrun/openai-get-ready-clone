@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block;max-width:100%}</style></head>
+<body><canvas id="c"></canvas>
+<script src="lib.js"></script>
+<script src="data/text_trace.js"></script>
+<script src="data/eye_templates.js"></script>
+<script src="data/circles.js"></script>
+<script src="data/eyes.js"></script>
+<script src="data/dots.js"></script>
+<script src="data/textstate.js"></script>
+<script src="scene.js"></script>
+<script>
+const q=new URLSearchParams(location.search); window.RS=+(q.get('rs')||1);
+const cv=document.getElementById('c'); cv.width=Math.round(1920*RS); cv.height=Math.round(1080*RS);
+window.ctx=cv.getContext('2d');
+init(); window.ready=true;
+if(!navigator.webdriver){ let t0=performance.now(); (function loop(){renderAt(((performance.now()-t0)/1000)%12.1); requestAnimationFrame(loop);})(); }
+</script></body></html>

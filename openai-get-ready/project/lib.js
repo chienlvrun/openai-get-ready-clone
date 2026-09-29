@@ -1,0 +1,1 @@
+window.LIB=1;
